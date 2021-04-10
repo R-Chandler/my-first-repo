@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <h1>Login Form</h1>
     <form method="get">
         <!--Ge method shows input information in address bar, used for searches and not log in forms-->
         <label for="email">Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
@@ -17,6 +18,31 @@
         <input name="password" placeholder="Password" size="30px" maxlength="30" id="password"><br>
         <input type="submit" value="Login">
         <!--line breaks used-->
+    </form>
+    <h1>Checkout Form</h1>
+    <form>
+        <label for="address">Address &nbsp;</label>
+        <input name="address" placeholder="Address" size="30px" maxlength="100" id="address"><br>
+        <label for="city">City &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input name="city" placeholder="City" size="30px" maxlength="30" id="city"><br>
+        <label for="postcode">Postcode&nbsp;</label>
+        <input name="postcode" placeholder="Postcode" size="30px" maxlength="10" id="postcode"><br>
+        <p>Select your shipping option</p>
+        <select name="shipping" id="shipping">
+            <option value="super saver shipping">Super Saver Shipping</option>
+            <option value="one day shipping">One day shipping</option>
+            <option value="two day shipping">Two day shipping</option>
+        </select>
+        <p>Choose your payment method</p>
+        <label>Paypal<input type="radio" name="paypal" value="paypal"></label>
+        <label>Credit Card<input type="radio" name="credit card" value="credit card"></label>
+        <label>Debit Card<input type="radio" name="debit card" value="debit card"></label><br>
+        <label id="comments"><strong>Comments</strong></label><br>
+        <textarea rows="4" cols="40" id="comments" value="comments"></textarea><br>
+        <label> <input type="checkbox" id="newslatter" name="newsletter" checked="checked">Sign me up for the
+            newsletter</label><br>
+        <label> <input type="checkbox" id="payment" name="payment">Save Payment Method</label>
+
     </form>
 </body>
 
